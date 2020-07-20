@@ -1,4 +1,7 @@
 import React from 'react';
+import { Route, useRouteMatch, useParams } from 'react-router-dom';
+
+
 
 const MovieList = props => {
   return (
@@ -8,7 +11,7 @@ const MovieList = props => {
       ))}
     </div>
   );
-}
+} 
 
 function MovieDetails({ movie }) {
   const { title, director, metascore } = movie;
