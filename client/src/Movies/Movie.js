@@ -32,7 +32,7 @@ const Movie = (props) => {
   if (!movie) {
     return <div>Loading movie information...</div>;
   }
-  
+  else if(movieId == movie.id){
   const { title, director, metascore, stars } = movie;
   return (
     <div className="save-wrapper">
@@ -55,6 +55,6 @@ const Movie = (props) => {
       <div className="save-button">Save</div>
     </div>
   );
-}
+}}
 
 export default Movie;
