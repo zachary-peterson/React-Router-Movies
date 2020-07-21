@@ -4,7 +4,6 @@ import { useRouteMatch, useParams, Link } from 'react-router-dom';
 
 
 const MovieList = props => { 
-  const movieId = useParams();
 
   return (
     <div className="movie-list">
